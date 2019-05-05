@@ -11,7 +11,7 @@ public class SendAPI {
      * */
     public void sendWordMessage(String from,String to,String content)
     {
-        new SendMessage().sendWordMessage(content,from,to);
+        //new SendMessage().sendWordMessage(content,from,to);
     }
 
     //TODO  发送群聊信息
@@ -21,7 +21,7 @@ public class SendAPI {
      * */
     public void sendGroupChatMessage(String from,String groupId,String content)
     {
-        new SendMessage().sendWordMessage(content,from,groupId);
+        //new SendMessage().sendWordMessage(content,from,groupId);
     }
 
     //TODO  发送创建群信息
@@ -29,7 +29,7 @@ public class SendAPI {
      * */
     public void sendCreateGroupMessage(String ids)
     {
-        new SendMessage().sendGroupMessage(ids);
+        //new SendMessage().sendGroupMessage(ids);
     }
 
     //TODO  发送登录信息
@@ -38,6 +38,6 @@ public class SendAPI {
      * */
     public void sendLoginMessage(String id,String pwd)
     {
-        new SendMessage().sendLoginMessage(id,pwd);
+        //new SendMessage().sendLoginMessage(id,pwd);
     }
 }

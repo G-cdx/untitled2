@@ -52,7 +52,8 @@ public class GroupChatManager {
     {
         for(UserInfoVo u : userList)
         {
-            leftVBox.getChildren().add(u.getLeftUserInfoPane());
+            if(u.getUserInfo().isGroup() == false)
+             leftVBox.getChildren().add(u.getLeftUserInfoPane());
         }
     }
     /***

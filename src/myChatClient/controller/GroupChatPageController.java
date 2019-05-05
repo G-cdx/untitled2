@@ -63,7 +63,7 @@ public class GroupChatPageController {
             p.getChildren().get(2).setId("0");
             if(cnt % 2 == 1)
             {
-                message = message + "#"+ p.getId();
+                message = message + ","+ p.getId();
             }
         }
         new SendAPI().sendCreateGroupMessage(message);

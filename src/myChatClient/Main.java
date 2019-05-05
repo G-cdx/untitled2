@@ -29,14 +29,17 @@ public class Main extends Application {
         stage = primaryStage;
         primaryStage.initStyle(StageStyle.UNDECORATED);
         AnchorPane loginLoader = FXMLLoader.load(getClass().getResource("view/fxml/login/Login.fxml"));
-        //先加载登录面板
-        Scene scene = new Scene(loginLoader);
-        primaryStage.setScene(scene);
-        primaryStage.show();
         //加载各个面板
         loaderPane();
-        //初始化好友列表
+        //加载主面板
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
 
+        //初始化好友列表
+        InitUtil initUtil = new InitUtil();
+        initUtil.initMyInfo();
+        initUtil.addFriends();
         GlobalState.groupChatController.setUserList(GlobalState.userManager.getUserList());
         GlobalState.userManager.renderFriendList(null,null);
 
