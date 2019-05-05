@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="255.0" style="-fx-background-color: rgb(22,22,22);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myChatClient.controller.CenterController">
+   <children>
+      <Pane prefHeight="70.0" style="-fx-background-color: rgb(55,65,75);">
+         <children>
+            <TextField focusTraversable="false" layoutX="23.0" layoutY="24.0" />
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="24.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/search.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="addPane" layoutX="191.0" layoutY="24.0" onMouseClicked="#onAddClick" onMouseEntered="#addMouseEntered" onMouseExited="#addMouseExited" prefHeight="23.0" prefWidth="23.0" style="-fx-background-color: rgb(220,217,217); -fx-background-radius: 4;">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/add.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="scrollerPane" fitToHeight="true" hbarPolicy="NEVER" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" prefHeight="530.0" prefWidth="255.0" style="-fx-background-color: rgb(250,253,253); -fx-padding: 0; -fx-background-insets: 0;" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox fx:id="friendVBox" prefHeight="522.0" prefWidth="255.0" style="-fx-background-color: rgb(253,251,253);">
+               <children>
+
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

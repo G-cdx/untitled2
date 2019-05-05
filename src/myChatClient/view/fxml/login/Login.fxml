@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myChatClient.controller.LoginController">
+   <children>
+      <Label layoutX="203.0" layoutY="37.0" prefHeight="33.0" prefWidth="95.0" text="Login">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <HBox layoutX="79.0" layoutY="118.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="365.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../img/login.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="account" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="20" prefHeight="35.0" prefRowCount="1" prefWidth="260.0" promptText="请输入账号" wrapText="true" HBox.hgrow="NEVER">
+               <font>
+                  <Font size="17.0" />
+               </font></TextArea>
+         </children>
+      </HBox>
+      <HBox layoutX="78.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="365.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../img/pwd.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="password" prefHeight="35.0" prefWidth="260.0" promptText="请输入密码">
+               <font>
+                  <Font size="18.0" />
+               </font></PasswordField>
+         </children>
+      </HBox>
+      <Button layoutX="317.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#onLoginClicked" prefHeight="30.0" prefWidth="73.0" style="-fx-background-radius: 20; -fx-background-color: rgb(58,153,257);" text="登陆" textFill="#fffbfb">
+         <font>
+            <Font name="Microsoft JhengHei UI" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
